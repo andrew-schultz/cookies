@@ -1,5 +1,7 @@
 body {
 	font-family: 'Helvetica';
+	margin: 0;
+	padding: 0;
 }
 
 #page {
@@ -15,5 +17,32 @@ body {
 	width: 30%;
 	display: inline-block;
 	padding: 1.25%;
-	border: 1px solid #f2f2f2;
+	text-align: center;
+}
+
+.button {
+	padding: 5px;
+	border: 2px solid;
+	background-color: #ffffff;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.counter {
+	border: 2px solid;
+	padding: 5px;
+	font-size: 18px;
+	width: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#guilt {
+	margin: 0 auto;
+	width: 60px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
 }

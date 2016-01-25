@@ -3,17 +3,11 @@ $(document).ready(function(){
 	var ic = parseInt(Cookies.get('choc'));
 	var io = parseInt(Cookies.get('oat'));
 	var is = parseInt(Cookies.get('snick'));
-	// var ic = 0;
-	// var io = 0;
-	// var is = 0;
+	
 	$('#chocbasket').text(Cookies.get('choc'));
 	$('#oatbasket').text(Cookies.get('oat'));
 	$('#snickbasket').text(Cookies.get('snick'));
 
-
-
-	
-		
 	$('#choc').on('click', function(){
 		ic += 1
 		Cookies.set('choc', ic);
@@ -57,6 +51,18 @@ $(document).ready(function(){
 		Cookies.set('snick', 0)
 		$('#snickbasket').text(Cookies.get('snick'));
 		console.log("Cookies Cleared " + Cookies.get('snick') + ".");
+	});
+
+	$('#guilt').on('click', function(){
+		ic = 0
+		Cookies.set('choc', 0)
+		$('#chocbasket').text(Cookies.get('choc'));
+		io = 0
+		Cookies.set('oat', 0)
+		$('#oatbasket').text(Cookies.get('oat'));
+		is = 0
+		Cookies.set('snick', 0)
+		$('#snickbasket').text(Cookies.get('snick'));
 	});
 
 });
